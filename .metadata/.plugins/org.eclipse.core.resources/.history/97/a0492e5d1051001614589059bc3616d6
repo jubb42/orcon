@@ -1,0 +1,18 @@
+//package ORCONOUTSIDEGAME;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+//not important just used to show where the mouse is
+public class MouseWatcher extends JPanel {
+
+	public static JTextField jtf;
+	
+	public MouseWatcher(){
+		this.setOpaque(false);
+		jtf = new JTextField("You mouse is at locatio: ");
+		add(jtf);
+	}
+	public static void setJTextField(String input){
+		jtf.setText(input);
+	}
+}
